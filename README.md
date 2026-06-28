@@ -2,6 +2,8 @@
 
 A computer vision application that locates a chessboard in an image, video, or live webcam feed, identifies every piece using a fine-tuned YOLO11n model, and displays the board state as a text grid and FEN string.
 
+FEN is the abbreviation of Forsyth-Edwards Notation, and it is the standard notation to describe positions of a chess game in a single line e.g. 1B1B2K1-1B6-5N2-6k1-8-8-8-4nq2 
+
 ---
 
 ## Requirements
@@ -11,6 +13,10 @@ Python 3.10 or higher. Install dependencies with:
 ```bash
 pip install -r requirements.txt
 ```
+
+The training datasets used are available on Kaggle:
+- **Chess Detection** (81 real photos, Pascal VOC XML annotations) — [kaggle.com/datasets/tannergi/chess-piece-detection](https://www.kaggle.com/datasets/tannergi/chess-piece-detection)
+- **Chess Positions** (100k digital renders, FEN-encoded filenames) — [kaggle.com/datasets/koryakinp/chess-positions](https://www.kaggle.com/datasets/koryakinp/chess-positions)
 
 ---
 
